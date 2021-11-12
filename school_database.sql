@@ -56,7 +56,7 @@ DROP TABLE IF EXISTS `Classes`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `Classes` (
   `ClassID` int(11) NOT NULL AUTO_INCREMENT,
-  `Name` varchar(25) DEFAULT NULL,
+  `Name` varchar(25) NOT NULL UNIQUE,
   `Description` varchar(200) DEFAULT NULL,
   `Enrolled` tinyint(1) NOT NULL,
   `Credits` int(11) NOT NULL,
